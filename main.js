@@ -91,9 +91,25 @@ function areaCirculo(radio) {
     return Pi * (radio * radio);
 }
 
-
-
-
 console.groupEnd("Circulo");
+
+// Button functions
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
 
 
