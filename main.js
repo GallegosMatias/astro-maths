@@ -112,4 +112,17 @@ function calcularAreaCuadrado() {
 }
 
 
+// Reto triangulo isósceles
+
+function alturaIsosceles(lado1, lado2, base) {
+    const altura = (Math.sqrt(((lado1 * lado2) - ((base / 2) ** 2))));
+
+    if (lado1 === lado2) {
+        return altura;
+    } else {
+        return "No es un triangulo isosceles";
+    }
+
+}
+
 
